@@ -12,7 +12,7 @@
 @implementation MyClassTests
 
 - (void)testExample {
-    MyClass *myClass = [[MyClass alloc] init];
+    MyClass<MyProtocol> *myClass = [[MyClass alloc] init];
     [myClass myMethod];// <= doesn't work auto complete, but success compile
 }
 
